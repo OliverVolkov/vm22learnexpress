@@ -2,7 +2,10 @@
  {% block title%} Form
  {% endblock %}
  {% block content %}
-<h1>Form :)</h1>
+<h1>Form </h1>
+{% if fname and lname and age %}
+<p>HELLO {{ fname }} {{ lname }}! You are {{ age }} years old!</p>
+{%endif%}
 <form>
     <p>
     <label for="fname">First name</label><br>

@@ -18,7 +18,7 @@ app.get('/page2', (req, res) => {
   });
   
 app.get('/form', (req, res) => {
-    res.render('form.njk');
+    res.render('form.njk' , req.query);
   console.log(req.query);
     //console.log('someone visited')
 });
