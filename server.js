@@ -17,7 +17,10 @@ app.get('/page2', (req, res) => {
     //console.log('someone visited')
   });
   
-
+app.get('/form', (req, res) => {
+    res.render('form.njk');
+    //console.log('someone visited')
+});
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`);
 });
