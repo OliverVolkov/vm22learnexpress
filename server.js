@@ -8,12 +8,12 @@ express: app,
 }),
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
+  res.render('index.njk');
   //console.log('someone visited')
 });
 
 app.get('/page2', (req, res) => {
-    res.sendFile(__dirname + '/views/page2.html');
+    res.render('page2.njk');
     //console.log('someone visited')
   });
   

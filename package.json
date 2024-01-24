@@ -2,9 +2,9 @@
   "name": "vm22learnexpress",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "server": "nodemon"
+    "start": "nodemon -e js,json,njk"
   },
   "keywords": [],
   "author": "",
