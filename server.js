@@ -19,6 +19,7 @@ app.get('/page2', (req, res) => {
   
 app.get('/form', (req, res) => {
     res.render('form.njk');
+  console.log(req.query);
     //console.log('someone visited')
 });
 app.listen(port, () => {
