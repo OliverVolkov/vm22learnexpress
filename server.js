@@ -2,6 +2,8 @@ const express = require('express');
 const nunjucks = require('nunjucks')
 const app = express();
 const port = 3000;
+
+app.use(express.urlencoded({extended:true}))
 nunjucks.configure('views', {
     autoescape: true,
 express: app, 
@@ -22,6 +24,19 @@ app.get('/form', (req, res) => {
   console.log(req.query);
     //console.log('someone visited')
 });
+
+app.get('/circle', (req, res) => {
+  res.render('circle.njk');
+
+  //console.log('someone visited')
+});
+
+app.post('/circle', (req, res) => {
+ res.render; 
+
+  //console.log('someone visited')
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`);
 });
